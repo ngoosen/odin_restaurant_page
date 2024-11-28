@@ -11,6 +11,7 @@ export default function Home(doc) {
   contentDiv.appendChild(titleDiv);
 
   const textDiv = doc.createElement("section");
+  textDiv.classList.add("text");
 
   const textParagraph1 = doc.createElement("p");
   textParagraph1.innerText = "Can you believe how awesome our restaurant is? Cause I can't! I mean look at those tacos, they are absolutely magnificent!";

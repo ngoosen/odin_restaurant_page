@@ -75,3 +75,12 @@ nav ul button:hover {
 
   background-color: #ffffffe0;
 }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 50px 30px;
+  background-color: #ffebd8;
+}
