@@ -1,6 +1,7 @@
 import "./styles.css";
 
 import Home from "./home";
+import About from "./about";
 
 function clear(doc) {
   doc.getElementById("content").innerHTML = "";
@@ -22,7 +23,8 @@ function clear(doc) {
 
   const aboutButton = doc.getElementById("about");
   aboutButton.addEventListener("click", () => {
-    console.log("about");
+    clear(doc);
+    About(doc);
   });
 
   const contactButton = doc.getElementById("contact");
