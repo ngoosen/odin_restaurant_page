@@ -11,3 +11,55 @@ html {
 
   box-sizing: inherit;
 }
+
+header {
+  padding: 20px;
+  background-color: #ff7b00;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+}
+
+nav ul button {
+  appearance: none;
+  border: none;
+
+  padding: 5px 30px;
+  border-radius: 5px;
+
+  background-color: #ffddbe;
+
+  transition: all .1s;
+}
+
+nav ul button:hover {
+  cursor: pointer;
+  background-color: #ffcc9c;
+  transform: scale(1.1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 150px;
+
+  background-image: url("./tacos.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.title h1 {
+  color: #ff7b00;
+  font-size: 50px;
+
+  padding: 0 40px;
+
+  background-color: #ffffffe0;
+}
