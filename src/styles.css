@@ -80,6 +80,10 @@ nav ul button:hover {
   background-image: url("./woman_cooking_pasta.jpg");
 }
 
+.contact {
+  background-image: url("./phone.jpg");
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -87,4 +91,35 @@ nav ul button:hover {
 
   padding: 50px 30px;
   background-color: #ffebd8;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+
+  margin: 0 100px;
+  padding: 20px;
+
+  background-color: #ffffff;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+form div:not(:nth-child(1), :nth-child(2)) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+form input,
+form textarea {
+  width: 70%;
+  padding: 2px 5px;
 }

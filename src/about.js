@@ -23,5 +23,6 @@ export default function About(doc) {
 
   textDiv.appendChild(textParagraph1);
   textDiv.appendChild(textParagraph2);
+  textDiv.appendChild(textParagraph3);
   contentDiv.appendChild(textDiv);
 }

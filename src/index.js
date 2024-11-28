@@ -2,6 +2,7 @@ import "./styles.css";
 
 import Home from "./home";
 import About from "./about";
+import Contact from "./contact";
 
 function clear(doc) {
   doc.getElementById("content").innerHTML = "";
@@ -29,6 +30,7 @@ function clear(doc) {
 
   const contactButton = doc.getElementById("contact");
   contactButton.addEventListener("click", () => {
-    console.log("contact");
+    clear(doc);
+    Contact(doc);
   });
 })(document);
