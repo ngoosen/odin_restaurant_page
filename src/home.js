@@ -1,4 +1,6 @@
 export default function Home(doc) {
+  const contentDiv = doc.getElementById("content");
+
   const titleDiv = doc.createElement("section");
   titleDiv.classList.add("title");
 
@@ -6,7 +8,7 @@ export default function Home(doc) {
   mainTitle.innerText = "The best restaurant in town!";
 
   titleDiv.appendChild(mainTitle);
-  doc.body.appendChild(titleDiv);
+  contentDiv.appendChild(titleDiv);
 
   const textDiv = doc.createElement("section");
 
@@ -17,5 +19,5 @@ export default function Home(doc) {
 
   textDiv.appendChild(textParagraph1);
   textDiv.appendChild(textParagraph2);
-  doc.body.appendChild(textDiv);
+  contentDiv.appendChild(textDiv);
 }
