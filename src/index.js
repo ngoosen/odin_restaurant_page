@@ -3,6 +3,7 @@ import "./styles.css";
 import Home from "./home";
 import About from "./about";
 import Contact from "./contact";
+import Menu from "./menu";
 
 function clear(doc) {
   doc.getElementById("content").innerHTML = "";
@@ -19,7 +20,8 @@ function clear(doc) {
 
   const menuButton = doc.getElementById("menu");
   menuButton.addEventListener("click", () => {
-    console.log("menu");
+    clear(doc);
+    Menu(doc);
   });
 
   const aboutButton = doc.getElementById("about");
